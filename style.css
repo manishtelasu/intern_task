@@ -1,0 +1,67 @@
+
+body{
+  
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .items{
+    
+  }
+
+nav{
+padding-right: 40px;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 1px -5px rgba(0, 0, 0, 0.12),
+    0 1px 6px 0 rgba(0, 0, 0, 0.2);
+       
+}
+
+nav #logo img{
+  width: 120px;
+    }
+
+
+  .items a{
+    display:inline-block;
+    text-decoration:none;
+    color:rgb(11, 6, 6);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight:400;
+    margin:0 20px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .items a span{
+    display: inline-block;
+    position:relative;
+    transition: transform 500ms;
+    -webkit-transition: -webkit-transform 500ms;
+    -moz-transition: transform 500ms;
+    
+  }
+  .items a span:after{
+    content: attr(data-hover);
+    position: absolute;
+    top: -30px;
+    left:0;
+    transform: translate3d(0,0,0);
+      -moz-transform: translate3d(0,0,0);
+      -webkit-transform: translate3d(0,0,0);
+  }
+  .items a:hover span,
+  .items a:focus span {
+      transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+  }
+  
+  
+  
